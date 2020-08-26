@@ -15,7 +15,7 @@
 
 
 .Header{
-
+    
 
     @media screen and (max-width:767px){
     position: relative;
@@ -23,7 +23,6 @@
    padding-bottom: 16px;
     padding-top: 16px;
 }
-    border: 1px solid #ECECEC;
        
 }
 
@@ -39,23 +38,28 @@
  border: none ;
  color:  #212121;
 
- 
+ @media screen and (min-width:768px){
+    display: none;
+}
 }
 
- &.is-open{
+.menu-btn .is-open{
      .icon-close{
          display: block;
      }
      .icon-burger{
          display: none;
      }
+
+     .header{
+        border: 1px solid #ECECEC;
+     }
  }
 
 
- @media screen and (min-width:768px){
-     display: none;
- }
-}
+ 
+
+
  .icon-close{
      display: none;
  }
@@ -65,6 +69,7 @@
 
        &:hover{
         fill: #2196F3;
+       }
 }
 
 
@@ -212,7 +217,7 @@
  
 .header-address-mail{
    display: block;
-    
+   font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42;
@@ -227,6 +232,7 @@
         }
 }
 .header-address-tel{
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42;
@@ -285,7 +291,5 @@
 .header-icon{
 margin-right: 10px;
 fill: currentColor;
-
-    
+   
 }
-

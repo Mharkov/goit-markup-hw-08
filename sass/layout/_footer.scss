@@ -3,16 +3,37 @@
 .footer {
   
     background: #2F303A;
-    height: 252px;
-    width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    
- }
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    align-items: baseline;
+   
+    @media screen and (min-width: 1200px){
+        text-align: unset;
+
+
+    }
+
+}
+
+.footer .conteiner{
+    @media screen and (min-width: 1200px){
+        height: 252px;
+        display: flex;
+       align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 768px){
+.tabletka{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+}
+
  
- 
- /* Footer Logo */
- 
+  
  
  .footer-address-text{
      
@@ -39,7 +60,7 @@
  
  .footer-address a:not(:first-child){
  
-     margin-top: 9px;
+     padding-top: 9px;
  }
  
  .footer-address a:hover,
@@ -49,25 +70,32 @@
     transition: $transition;
  }
  
- .footer .conteiner{
-         display: flex;
-         padding-top: 60px;
-         padding-bottom: 60px;
-         align-items: baseline;
-         justify-content: space-between;
-     }
-  
+ 
  .social-icons{
+@media screen and (max-width: 767px){
+        margin-top: 60px;     
+}
+@media screen and (min-width: 1200px){
+
+    margin-left: 69px;
+    margin-right: 94px;
+}
+
+  }
+
  
-     margin-left: 60px;
- 
- 
-     }
+
+
  .social-icons-list{
  
      display: flex;
-     margin-top: 20px;
-     justify-content: space-between;
+      margin-top: 20px;
+     justify-content: center;
+
+     @media screen and (min-width: 480px){
+            
+     }
+     
  }
  
  .social-icons-list-item:not(:last-child){
@@ -87,11 +115,7 @@
      
  
  }
-     /* 
-     background-color: rgba(255, 255, 255, 0.1);
-     background-size: 20px;
-     }  */
- 
+     
  .footer-icon{
  
      width: 20px;
@@ -106,29 +130,50 @@
  }
  
  .social-icons-title{
-     display: flex;
+    
      font-weight: 700;
      font-size: 14px;
      line-height: 1.143;
      text-transform: uppercase;
-     margin-bottom: 20px;
- 
+
      color: $primary-white-color;
+
+     @media screen and (min-width: 1200px){
+
+        display: flex;
+     }
  
  }
  
  /* Footer кнопки */
  
- .mailing-list{
-     margin-left: 94px;
- }
+
+.mailing-list{
+
+    margin-top: 60px;
+}
  
  .mailing-btn{
      position: relative;
  display: flex;
  align-items: baseline;
- 
+ margin-top: 20px;
+ flex-wrap: wrap;
+
+ @media screen and (min-width: 768px){
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
  }
+ 
+ @media screen and (min-width: 1208px){
+ display: flex;
+ width: 100%;
+ flex-wrap: nowrap;
+ }
+ }
+
  .mail-icon{
      width: 24px;
      height: 24px;
@@ -139,10 +184,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
  
+
      width: 200px;
      height: 50px;
-    margin-left: 12px; 
+    
          
      border: 0px;
  
@@ -159,8 +207,10 @@
      background: $accent-color;
  }
  .mailing-list-input{
-     width: 358px;
+     width: 450px;
      height: 50px; 
+
+     margin-bottom: 20px;
  
      border: none;
      font-weight: normal;
@@ -175,14 +225,19 @@
      background: #2F303A;
      color:$primary-white-color;
      padding-left: 16px;
+
+     @media screen and (min-width: 1200px){
+        width: 350px;
+         margin-right: 12px;
+     }
  }
  
  .footer-label{
  
      position: absolute;
-     top: 50%;
+     top: 20px;
      left: 16px;
-     transform: translateY(-50%);
+     transform: translateY(-20%);
  
      font-size: 16px;
      line-height: 1.25;
