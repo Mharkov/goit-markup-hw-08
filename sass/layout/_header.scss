@@ -277,14 +277,17 @@
         transition:  $transition;
             
     }
+    @media screen and (min-width:1200px){
+           display: flex;
+           align-items: baseline;
 
-    // .link:not(:last-child){
+    .link:not(:last-child){
 
-    //     margin-right: 50px;
+        margin-right: 50px;
     
-    // }
+    }
 
-  
+    }
 
 }
 
