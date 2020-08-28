@@ -115,7 +115,7 @@
 
    </div> 
 </section>
-<section class="works ">
+<!-- <section class="works ">
     <div class="conteiner">
         <h2 class="second-title" >Чем мы занимаемся</h2>
         <ul class="works-list">
@@ -133,16 +133,19 @@
             </li>
         </ul>
     </div>
-    </section>
+    </section> -->
  
-    <!-- <section class="team ">
+    <section class="team ">
     <div class="conteiner">
     <h2 class="second-title" >Наша команда</h2>
      <ul class="team-list ">
             <li class="team-list-item" >
-               
-                    <img srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x "
-                    src="./images/foto1.jpg" alt="Портрет" width="450" height="320" >
+               <picture>
+                   <source srcset="./images/team1.jpg 1x, ./images/team1@2x.jpg 2x " media="(max-width:1199px)">
+                   <source srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x " media="(min-width:1200px)" >
+                <img src="./images/foto1.jpg" alt="Портрет" width="450" height="320" >
+               </picture>
+                    
                 
               
              <h3 class="team-list-item-name">Николай Кучеренко</h3>
@@ -175,9 +178,11 @@
         </ul>
     </li>
     <li class="team-list-item" >
-    <img 
-    srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x"
-    src="./images/foto2.jpg" alt="Портрет" width="450" height="320">
+        <picture>
+            <source srcset="./images/team2.jpg 1x, ./images/team2@2x.jpg 2x " media="(max-width:1199px)">
+            <source srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x " media="(min-width:1200px)" >
+         <img src="./images/foto2.jpg" alt="Портрет" width="450" height="320" >
+        </picture>
     <h3 class="team-list-item-name" >Ольга Иванова</h3>
     <p lang="en" class="team-list-item-profession" >Frontend Developer</p>
     <ul class="social"  >
@@ -208,7 +213,13 @@
     </ul>
     </li>
     <li class="team-list-item">
-<img src="./images/foto3.jpg" alt="Портрет" width="270" height="260">
+
+        <picture>
+            <source srcset="./images/team3.jpg 1x, ./images/team3@2x.jpg 2x " media="(max-width:1199px)">
+            <source srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x " media="(min-width:1200px)" >
+         <img src="./images/foto3.jpg" alt="Портрет" width="450" height="320" >
+        </picture>
+
     <h3 class="team-list-item-name" >Андрей Шевченко</h3>
     <p lang="en" class="team-list-item-profession" >Marketing</p>
     <ul class="social"  >
@@ -239,7 +250,12 @@
     </ul>
     </li>
 <li class="team-list-item" >
-    <img src="./images/foto4.jpg" alt="Портрет" width="270" height="260">
+    <picture>
+        <source srcset="./images/team4.jpg 1x, ./images/team4@2x.jpg 2x " media="(max-width:1199px)">
+        <source srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x " media="(min-width:1200px)" >
+     <img src="./images/foto4.jpg" alt="Портрет" width="450" height="320" >
+    </picture>
+
     <h3 class="team-list-item-name" >Иван Николаев</h3>
     <p lang="en" class="team-list-item-profession" >UI Designer</p>
     <ul class="social"  >
@@ -271,7 +287,7 @@
 </li>
 </ul>
 </div>
-</section> -->
+</section>
 <section class="clients conteiner">
     <h2 class="second-title">Постоянные клиенты</h2>
     <ul class="clients-list" >

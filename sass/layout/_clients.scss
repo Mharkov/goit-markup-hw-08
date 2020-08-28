@@ -2,8 +2,12 @@
 
 .clients{
 
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 30px;
+    @media screen and (min-width: 1200px){
+        padding-bottom: 64px;
+
+    }
+
 
 }
 
@@ -29,16 +33,21 @@ a {
    
 }
 
+@media screen and (min-width: 1200px){
+
+    flex-wrap: nowrap;
+}
+
 }    
 
-.clients-list-item
+.clients-list-item{
+margin-bottom: 30px;
 
-{
     display: flex;
     align-items: center;
     justify-content: center;
     
-    width: 170px;
+    width: 210px;
     height: 90px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
@@ -51,23 +60,34 @@ a {
    transition: $transition;
 }
 
-// &:not(:last-child)
-// {
-
-//     margin-right: 30px;
-// }
-   
-
+@media screen and (min-width: 768px){
+width: 226px;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 1200px){
+&:not(:last-child){
+
+    margin-right: 30px;
+}
+   
+}
+}
+
+@media screen and (max-width: 767px){
     .clients-list-item:nth-child(2n+1){
     margin-right: 30px;
 
-
+}
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .clients-list-item:not(:nth-child(3n)){
+    margin-right: 30px;
+
 }
+}
+
+
 
 .clients-list-item:hover .clients-icon
 {

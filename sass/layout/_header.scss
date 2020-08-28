@@ -46,6 +46,7 @@
 .menu-btn .is-open{
      .icon-close{
          display: block;
+         
      }
      .icon-burger{
          display: none;
@@ -100,6 +101,7 @@
 
 .menu-wrapper.is-open{
     display: block;
+    z-index:100;
 
 }
 .Header-Portfolio{
@@ -196,7 +198,11 @@
     }
 }
 
-
+@media screen and (max-width:767px){
+    .Studio{
+        color: #2196F3;
+    }
+}
 
 /* Header Adress */
 
