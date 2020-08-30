@@ -48,12 +48,13 @@
       rgba(47, 48, 58, 0.8)
   ),
       url(../images/header/destop.jpg);
-
+      background-size: 1200px 600px;
       @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .main {
         background-image: url(../images/header/destop@2x.jpg);
+        background-size: 1200px 600px;
       }
     }
   }

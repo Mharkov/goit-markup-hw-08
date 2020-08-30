@@ -38,19 +38,36 @@
  border: none ;
  color:  #212121;
 
+ &.is-open{
+    .icon-close{
+        display: block;
+        
+    }
+    .icon-burger{
+        display: none;
+    } 
+
+ }
+ &:hover{
+
+    fill: #2196F3;
+ }
+
+ 
+
  @media screen and (min-width:768px){
     display: none;
 }
 }
 
-.menu-btn .is-open{
-     .icon-close{
-         display: block;
+.menu-btn.is-open{
+    //  .icon-close{
+    //      display: block;
          
-     }
-     .icon-burger{
-         display: none;
-     }
+    //  }
+    //  .icon-burger{
+    //      display: none;
+    //  }
 
      .header{
         border: 1px solid #ECECEC;
@@ -66,12 +83,12 @@
  }
 
 
-.icon-burger{
+// .icon-burger{
 
-       &:hover{
-        fill: #2196F3;
-       }
-}
+//        &:hover{
+//         fill: #2196F3;
+//        }
+// }
 
 
 
